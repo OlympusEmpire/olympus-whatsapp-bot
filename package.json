@@ -4,7 +4,7 @@
   "description": "WhatsApp Bot - Olympus Network Communities",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -32,7 +32,7 @@
     "@adiwajshing/keyed-db": "^0.2.4",
     "axios": "^0.26.0",
     "jimp": "^0.16.1",
-    "node-fetch": "^3.2.0",
+    "node-fetch": "^2.6.1",
     "qrcode-terminal": "^0.12.0",
     "request": "^2.88.2",
     "sharp": "^0.29.3"

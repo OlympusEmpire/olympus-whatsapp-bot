@@ -3,7 +3,7 @@ exports.info = {
     dono: {
         nome: "Julius Sauco",
         numero: [
-            "51955715506@s.whatsapp.net"
+            "15168712242@s.whatsapp.net"
         ]
     },
     grupo: ""
