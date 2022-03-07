@@ -1,4 +1,4 @@
-const { core } = require('./lib')
+//const { core } = require('./lib')
 const { default: makeWASocket, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion } = require("@adiwajshing/baileys")
 const { state, saveState } = useSingleFileAuthState('./wabasemdConnection.json')
 
@@ -20,8 +20,8 @@ const startSock = async () => {
 
     sock.ev.on('creds.update', saveState)
 
-    client.on('messages.upsert', async (context) => {
-        
+    sock.ev.on('messages.upsert', async (context) => {
+        console.log('got messages', context)
     })
 }
 
