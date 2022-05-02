@@ -1,10 +1,17 @@
+exports.testMode = true
+
 exports.info = {
-    prefix: "/",
+    prefix: this.testMode ? '#' : '.',
     dono: {
-        nome: "Julius Sauco",
+        nome: "Guilherme",
         numero: [
-            "15168712242@s.whatsapp.net"
+            "COLOQUE_SEU_NUMERO_AQUI_DESSA_FORMA: 5522981274455@s.whatsapp.net"
         ]
     },
     grupo: ""
+}
+
+exports.connectionFileName = () => {
+    var path = './connection/'
+    return path + (this.testMode ? 'wabasemdConnectionTest.json' : 'wabasemdConnection.json')
 }
